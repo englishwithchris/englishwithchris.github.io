@@ -1,0 +1,86 @@
+.body {
+    background-color: whitesmoke;
+}
+
+/*---structural classes---*/
+
+
+
+.headerContainer {
+    height: 100vh;
+}
+
+#header {
+    background-color: #03989E;
+}
+
+#mainImage {
+    object-fit: cover;
+    width: 50%;
+    height: 30vh;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.headline {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+
+
+}
+
+.col-md-6 {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.fullScreenBgWrapper {
+    background-color: #03989E;
+    color: white;
+}
+
+.nonColSection {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.businessHours {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.page-footer {
+    background-color: #03989E;
+}
+
+/*---utility classes---*/
+
+.sectionHeader {
+    color: #03989E;
+}
+
+.underLine {
+    width: 80%;
+    background-color: #03989E;
+    height: 2px;
+    margin: 20px auto 0px auto;
+
+}
+
+
+
+/*---Media queries---*/
+@media only screen and (min-width: 950px) {
+
+    /*---Stops the header contnet from scaling up indefinetly---*/
+    .appLimit {
+        width: 950px;
+        margin: 0 auto;
+    }
+}
