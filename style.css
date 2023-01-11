@@ -4,23 +4,36 @@
 
 /*---structural classes---*/
 
-
-
 .headerContainer {
     height: 100vh;
 }
 
 #header {
     background-color: #03989E;
+    
 }
 
-#mainImage {
-    object-fit: cover;
-    width: 50%;
-    height: 30vh;
-    margin: 0 auto;
-    display: block;
+.landingImage{
+    background-image: url(/images/landingImage.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 3px black;
+    height: 70vh;
+}
+
+.businessCard{
+    background-color: #03989E;
+  
+}
+
+#profileImage {
+    background-image: url(/images/master_image.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    max-width: 70%;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 .headline {
@@ -59,6 +72,11 @@
     background-color: #03989E;
 }
 
+.faqHead{
+    height: 50vh;
+    
+}
+
 /*---utility classes---*/
 
 .sectionHeader {
@@ -82,5 +100,44 @@
     .appLimit {
         width: 950px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    /*---Avoids image scaling problems by adjusting max width---*/
+    #profileImage {
+        background-image: url(/images/master_image.JPG);
+        background-size: cover;
+        background-position: center;
+        height: 150px;
+        max-width: 85%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    /*---Avoids image scaling problems---*/
+    #profileImage {
+        background-image: url(/images/master_image.JPG);
+        background-size: cover;
+        background-position: center;
+        height: 150px;
+        max-width: 40%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    /*---Avoids image scaling problems---*/
+    #profileImage {
+        display: none;
     }
 }
