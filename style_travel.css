@@ -1,0 +1,175 @@
+body {
+    /* Colorscheme defns */
+    --bodycolor: rgba(255, 246, 229, 1);
+    /* #fff6e5 */
+    --headercolor: rgba(27, 118, 133, 1);
+    /* #1b7685 */
+    --ctacolor: rgba(26, 77, 143, 1);
+    /* #1A4D8F */
+    --headercolorTransparent: rgba(27, 118, 133, 0.8);
+
+    /* Font definitions */
+    font-family: Inter, sans-serif;
+
+    /* General */
+    background-color: var(--bodycolor)
+}
+
+
+.navbar {
+    border-bottom: 2px solid white;
+    text-shadow: 1px 1px 3px black;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-family: Oregano, Inter, sans-serif;
+}
+
+.navbarScrollChange {
+    background-color: var(--headercolor);
+    color: black;
+}
+
+.nav-link {
+    color: white;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Oregano, inter, sans-serif;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 3px black;
+}
+
+.hero-content h1 {
+    font-size: 3.0rem;
+}
+
+.hero-content h5 {
+    font-size: 1.5rem;
+}
+
+
+.btn {
+    background-color: var(--ctacolor);
+    border: none;
+}
+
+.heroButton {
+    position: absolute;
+    bottom: 15%;
+
+}
+
+.placeholder {
+    height: 200px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.booking {
+    min-height: 50vh;
+    width: 100%;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    text-shadow: 1px 1px 3px black;
+    background: url(./boatImages/boats-2758962_1280.jpg) center no-repeat;
+    background-size: cover;
+
+}
+
+.contactForm {
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+    position: relative;
+    top: 10px;
+    color: whitesmoke;
+    border-top: 1px solid white;
+}
+
+.footerContent {
+    min-height: 20px;
+    background-color: var(--headercolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid white;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 990px) {
+    .navbar {
+        background-color: var(--headercolorTransparent);
+    }
+}
+
+@media (max-width: 465px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h5 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+/* UTILITY CLASSES */
+.textEnterLeft {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.animateEnterLeft {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
+
+.textEnterRight {
+    position: relative;
+    opacity: 0;
+    transform: translateX(5%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.animateEnterRight {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
