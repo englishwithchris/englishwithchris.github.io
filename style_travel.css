@@ -1,12 +1,23 @@
 body {
-    /* Colorscheme defns */
+    
+    /* Colorscheme 1 defns
     --bodycolor: rgba(255, 246, 229, 1);
-    /* #fff6e5 */
+  
     --headercolor: rgba(27, 118, 133, 1);
-    /* #1b7685 */
+  
     --ctacolor: rgba(26, 77, 143, 1);
-    /* #1A4D8F */
+    
     --headercolorTransparent: rgba(27, 118, 133, 0.8);
+     */
+
+    /* Colorscheme 2 defns */
+    --bodycolor: rgba(255, 255, 255, 1);
+
+    --headercolor: rgba(0, 48, 105, 1);
+
+    --ctacolor: rgba(0, 147, 216);
+    --ctahovercolor: rgba(255, 204, 0, 1);
+    --headercolorTransparent: rgba(0, 48, 105, 0.8);
 
     /* Font definitions */
     font-family: Inter, sans-serif;
@@ -35,10 +46,16 @@ body {
     color: white;
 }
 
+.logo{
+    height: 50px; 
+    width: auto;  
+    padding: 1px;
+}
+
 .hero {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +99,13 @@ body {
 .btn {
     background-color: var(--ctacolor);
     border: none;
+    text-shadow: 1px 1px 3px black;
+}
+
+.btn:hover{
+    color: darkblue;
+    background-color: var(--ctahovercolor);
+    text-shadow: none;
 }
 
 .heroButton {
@@ -133,6 +157,11 @@ footer {
 @media (max-width: 990px) {
     .navbar {
         background-color: var(--headercolorTransparent);
+    }
+
+    .logo{
+        background-color: rgba(245, 245, 245, 0.8);
+        border-radius: 25%;
     }
 }
 
