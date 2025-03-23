@@ -32,8 +32,12 @@ function handleNavbarScroll() {
 
   if (window.scrollY > navbarScrollChangeThreshold) {
     navbar.classList.add("navbarScrollChange");
+    // navbar.classList.add("logoTwo");
+    // navbar.classList.remove("logo");
   } else {
     navbar.classList.remove("navbarScrollChange");
+    // navbar.classList.add("logo");
+    // navbar.classList.remove("logoTwo");
   }
 }
 

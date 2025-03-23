@@ -42,12 +42,21 @@ body {
     color: black;
 }
 
+.navbarScrollChange {
+    background-color:  rgba(0, 48, 105, 0.8);
+}
+
+.navbarScrollChange img{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25%;
+}
+
 .nav-link {
     color: white;
 }
 
 .logo{
-    height: 50px; 
+    height: 4rem; 
     width: auto;  
     padding: 1px;
 }
@@ -126,7 +135,7 @@ body {
     color: whitesmoke;
     border: 1px solid whitesmoke;
     text-shadow: 1px 1px 3px black;
-    background: url(./boatImages/boats-2758962_1280.jpg) center no-repeat;
+    background: url("./boatImages/boat.webp") center no-repeat;
     background-size: cover;
 
 }
