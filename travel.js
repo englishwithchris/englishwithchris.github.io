@@ -14,7 +14,7 @@ window.onscroll = function () {
 
 //Hides the landing title on scroll for better asthetics
 function handleHeroTitle() {
-  let heroScrollChangeThreshold = window.innerHeight * 0.05;
+  let heroScrollChangeThreshold = window.innerHeight * 0.5;
 
   if (window.scrollY >= heroScrollChangeThreshold) {
     heroTitle.classList.add("d-none");
@@ -28,7 +28,7 @@ function handleHeroTitle() {
 //fills the navbar bg color when over content to avoid
 //looking like a total mess.
 function handleNavbarScroll() {
-  let navbarScrollChangeThreshold = window.innerHeight * 0.65;
+  let navbarScrollChangeThreshold = window.innerHeight * 0.95;
 
   if (window.scrollY > navbarScrollChangeThreshold) {
     navbar.classList.add("navbarScrollChange");

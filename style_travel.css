@@ -43,11 +43,11 @@ body {
 }
 
 .navbarScrollChange {
-    background-color:  rgba(0, 48, 105, 0.8);
+    background-color:  rgba(0, 48, 105, 1);
 }
 
 .navbarScrollChange img{
-    background-color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
     border-radius: 25%;
 }
 
@@ -87,7 +87,8 @@ body {
 
 .hero-content {
     position: absolute;
-    top: 20%;
+    /* top: 20%; */
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Oregano, inter, sans-serif;
@@ -165,12 +166,11 @@ footer {
 
 @media (max-width: 990px) {
     .navbar {
-        background-color: var(--headercolorTransparent);
+        background-color: var(--headercolor);
     }
 
     .logo{
-        background-color: rgba(245, 245, 245, 0.8);
-        border-radius: 25%;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
     }
 }
 
